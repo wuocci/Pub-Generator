@@ -1,0 +1,471 @@
+[
+    {
+        "name" : "Ravintola Kerho",
+        "address" : "Satamakatu 7",
+        "category" : "MainStreet"
+    },
+    {
+        "name" : "Kaijakka",
+        "address" : "Laukontori 12",
+        "category" : "MainStreet"
+    },
+    {
+        "name" : "Trasherie Bar",
+        "address" : "Hämeenkatu 30",
+        "category" : "MainStreet"
+    },
+    {
+        "name" : "Bar Bertel",
+        "address" : "Hämeenkatu 30",
+        "category" : "MainStreet"  
+    },
+    {
+        "name" : "Pub Simon",
+        "address" : "Hämeenkatu 26",
+        "category" : "MainStreet"
+    }, 
+    {
+        "name" : "Ale-Pub Hällänkellari",
+        "address" : "Hämeenkatu 25",
+        "category" : "MainStreet" 
+    },
+    {
+        "name" : "Ravintola Teerenpeli",
+        "address" : "Hämeenkatu 25",
+        "category" : "MainStreet"
+    },
+    {
+        "name" : "Bar Ihku",
+        "address" : "Hämeenkatu 23",
+        "category" : "MainStreet"
+    },
+    {
+        "name" : "Heidi's Bier Bar",
+        "address" : "Hämeenkatu 24",
+        "category" : "MainStreet"
+    },
+    {   
+        "name" : "Bricks",
+        "address" : "Hämeenkatu 18",
+        "category" : "MainStreet"
+    },
+    {
+        "name" : "Vanha Monttu",
+        "address" : "Hämeenkatu 17",
+        "category" : "MainStreet"
+    },
+    {
+        "name" : "Save File",
+        "address" : "Aleksis Kiven katu 24",
+        "category" : "MainStreet"
+    },
+    {
+        "name" : "Public Corner", 
+        "address" : "Keskustori 5",
+        "category" : "MainStreet"
+    },
+    {
+        "name" : "Ruby & Fellas Irish Bar",
+        "address" : "Hämeenkatu 15",
+        "category" : "MainStreet"
+    },
+    {
+        "name" : "Old Irish Pub",
+        "address" : "Hämeenkatu 25",
+        "category" : "MainStreet"
+    },
+    {
+        "name" : "Tillikka",
+        "address" : "Hämeenkatu 14",
+        "category" : "MainStreet"
+    },
+    {
+        "name" : "Paapan Kapakka",
+        "address" : "Koskikatu 9",
+        "category" : "MainStreet"
+    },
+    {
+        "name" : "Pyynikin Brewhouse",
+        "address" : "Verkatehtaankatu 2",
+        "category" : "MainStreet"
+    },
+    {
+        "name" : "Pub Ukko Nooa",
+        "address" : "Hatanpään valtatie 1",
+        "category" : "MainStreet"
+    },
+    {
+        "name" : "BrewDog Tampere",
+        "address" : "Vuolteenkatu 1",
+        "category" : "MainStreet"
+    },
+    {
+        "name" : "Broor",
+        "address" : "Hatanpään valtatie 12",
+        "category" : "MainStreet"
+    },
+    {
+        "name" : "Gastropub Soho",
+        "address" : "Otavalankatu 10",
+        "category" : "MainStreet"
+    },
+    {
+        "name" : "O'Connels", 
+        "address" : "Rautatienkatu 24",
+        "category" : "MainStreet"
+    },
+    {
+        "name" : "Olutravintola Konttori",
+        "address" : "Verkatehtaankatu 5",
+        "category" : "MainStreet"
+    },
+    {
+        "name" : "Majava Baari",
+        "address" : "Aleksanterinkatu 29",
+        "category" : "MainStreet"
+    },
+    {
+        "name" : "Cafe Europa",
+        "address" : "Aleksanterinkatu 29",
+        "category" : "MainStreet"
+    },
+    {
+        "name" : "Ravintola Bord",
+        "address" : "Koskikatu 5",
+        "category" : "MainStreet"
+    },
+    {
+        "name" : "Bar Moe's",
+        "address" : "Koskikatu 5",
+        "category" : "MainStreet"
+    },
+    {
+        "name" : "London Tampere", 
+        "address" : "Pellavatehtaankatu 8",
+        "category" : "MainStreet"
+    }, 
+    {
+        "name" : "Bar Inez",
+        "address" : "Pellavatehtaankatu 19",
+        "category" : "MainStreet"
+    },
+    {
+        "name" : "Henkka",
+        "address" : "Hämeenkatu 13",
+        "category" : "MainStreet"
+    },
+    {
+        "name" : "H5", 
+        "address" : "Hämeenkatu 6",
+        "category" : "MainStreet"
+    },
+    {
+        "name" : "Alanya Bar",
+        "address" : "Satakunnankatu 26",
+        "category" : "MainStreet"
+    },
+    {
+        "name" : "Ale Bar Pikajuna",
+        "address" : "Hämeenkatu 5",
+        "category" : "MainStreet"
+    },
+    {
+        "name" : "Saunaravintola Kuuma",
+        "address" : "Laukontori 21",
+        "category" : "MainStreet"
+    },
+    {
+        "name" : "Jolene Karaoke Bar",
+        "address" : "Aleksanterinkatu 22",
+        "category" : "MainStreet"
+    },
+    {
+        "name" : "Tiikerihai",
+        "address" : "Hämeenkatu 5",
+        "category" : "MainStreet"
+    },
+    {
+        "name" : "Hovipoika",
+        "address" : "Keskustori 5",
+        "category" : "MainStreet"
+    },
+    {
+        "name" : "Oluthuone Panimomestari",
+        "address" : "Tuomiokirkonkatu 15",
+        "category" : "MainStreet"
+    },
+    {
+        "name" : "Semafori",
+        "address" : "Rautatienkatu 25",
+        "category" : "MainStreet"
+    },
+    {
+        "name" : "Ale Pupi",
+        "address" : "Rautatienkatu 14",
+        "category" : "MainStreet"
+    },
+    {
+        "name" : "Jerun Piilopaikka",
+        "address" : "Hämeenkatu 10",
+        "category" : "MainStreet"
+    },
+    {
+        "name" : "Pub Kyttälä",
+        "address" : "Kyttälänkatu 9",
+        "category" : "MainStreet"
+    },
+    {
+        "name" : "Ravintola Teatterinkulma",
+        "address" : "Hallituskatu 19",
+        "category" : "MainStreet"
+    },
+    {
+        "name" : "Kumma Junk Bar & Lounge",
+        "address" : "Aleksanterinkatu 20",
+        "category" : "MainStreet"
+    },
+    {
+        "name" : "Doris",
+        "address" : "Aleksanterinkatu 20",
+        "category" : "MainStreet"
+    },
+    {
+        "name" : "Muusa",
+        "address" : "Satakunnankatu 10",
+        "category" : "MainStreet"
+    },
+    {
+        "name" : "Jack the Rooster",
+        "address" : "Satakunnankatu 13",
+        "category" : "MainStreet"
+    },
+    {
+        "name" : "Periscope",
+        "address" : "Vuolteenkatu 1",
+        "category" : "MainStreet"
+    },
+    {
+        "name" : "Bar Cafe Lategame",
+        "address" : "Kuninkaankatu 19",
+        "category" : "MainStreet"
+    },
+    {
+        "name" : "Club 21",
+        "address" : "Puutarhakatu 15",
+        "category" : "MainStreet"
+    },
+    {
+        "name" : "Ravintola Ohranjyvä",
+        "address" : "Näsilinnankatu 15",
+        "category" : "MainStreet"
+    },
+    {
+        "name" : "Maanalainen",
+        "address" : "Hämeenpuisto 17",
+        "category" : "MainStreet"
+    },
+    {
+        "name" : "GastroPub Nordic",
+        "address" : "Otavalankatu 3",
+        "category" : "MainStreet"
+    },
+    {
+        "name" : "Gastropub Tuulensuu",
+        "address" : "Hämeenpuisto 23",
+        "category" : "MainStreet"
+    },
+    {
+        "name" : "Ravintola Ukkometso",
+        "address" : "Kauppakatu 16",
+        "category" : "MainStreet"
+    },
+    {
+        "name" : "Kievari Kahdet Kasvot",
+        "address" : "Kauppakatu 14",
+        "category" : "MainStreet"
+    },
+    {
+        "name" : "Bar K",
+        "address" : "Kauppakatu 11",
+        "category" : "MainStreet"
+    },
+    {
+        "name" : "Ravintola Artturi",
+        "address" : "Kauppakatu 9",
+        "category" : "MainStreet"
+    },
+    {
+        "name" : "Deli 1909 & Wine Bar",
+        "address" : "Puutarhakatu 11",
+        "category" : "MainStreet"
+    },
+    {
+        "name" : "Salhojankadun Pub",
+        "address" : "Salhojankatu 29",
+        "category" : "TamKal"
+    },
+    {
+        "name" : "Amadeus",
+        "address" :  "Tammelan puistokatu 34",
+        "category" : "TamKal"
+    },
+    {
+        "name" : "Mixei",
+        "address" : "Itsenäisyydenkatu 7",
+        "category" : "TamKal"
+    },
+    {
+        "name" : "Tentti",
+        "address" : "Itsenäisyydenkatu 5",
+        "category" : "TamKal"
+    },
+    {
+        "name" : "Ravintola Klubi",
+        "address" : "Tullikamarin aukio 2",
+        "category" : "TamKal"
+    },
+    {
+        "name" : "Ravintola Telakka",
+        "address" : "Tullikamarin aukio 3",
+        "category" : "TamKal"
+    },
+    {
+        "name" : "Kaltsubar",
+        "address" : "Kalevan Puistotie 17",
+        "category" : "TamKal"
+    },
+    {
+        "name" : "Katubaari Axu",
+        "address" : "Ilmarinkatu 47",
+        "category" : "TamKal"
+    },
+    {
+        "name" : "Leijona Pub",
+        "address" : "Sammonkatu 32",
+        "category" : "TamKal"
+    },
+    {
+        "name" : "Public House Huurre",
+        "address" : "Sammonkatu 46",
+        "category" : "TamKal"
+    },
+    {
+        "name" : "Loukon Pub",
+        "address" : "Sammonkatu 37",
+        "category" : "TamKal"
+    },
+    {
+        "name" : "Ravintola Lapin Akka",
+        "address" : "Väinämöisenkatu 26",
+        "category" : "TamKal"
+    },
+    {
+        "name" : "Gastropub Kaleva",
+        "address" : "Pellervonkatu 9",
+        "category" : "TamKal"
+    },
+    {
+        "name" : "Bar Oma",
+        "address" : "Aaltosenkatu 31",
+        "category" : "TamKal"
+    },
+    {
+        "name" : "Pub Pikilinna",
+        "address" : "Ilmarinkatu 9",
+        "category" : "TamKal"
+    },
+    {
+        "name" : "Tammelan Woima",
+        "address" : "Tammelan puistokatu 27",
+        "category" : "TamKal"
+    },
+    {
+        "name" : "Bar Passion",
+        "address" : "Kangaskatu 14",
+        "category" : "TamKal"
+    },
+    {
+        "name" : "Ravintola Kantis",
+        "address" : "Tullikamarin aukio 1",
+        "category" : "TamKal"
+    },
+    {
+        "name" : "Pub Harald",
+        "address" : "Kalevan puistotie 7",
+        "category" : "TamKal"
+    },
+    {
+        "name" : "Pub Dog's Home",
+        "address" : "Itsenäisyydenkatu 2",
+        "category" : "TamKal"
+    },
+    {
+        "name" : "Bar 5/5",
+        "address" : "Teiskontie 8",
+        "category" : "TamKal"
+    },
+    {
+        "name" : "Bonker Moodcourt",
+        "address" : "Ratapihankatu 39",
+        "category" : "TamKal"
+    },
+    {
+        "name" : "Ahjo Pub",
+        "address" : "Pellervonkatu 6",
+        "category" : "TamKal"
+    },
+    {
+        "name" : "Arjuska",
+        "address" : "Teekkarinkatu 17",
+        "category" : "HerWood"
+    },
+    {
+        "name" : "Varjobaari",
+        "address" : "Satamakatu 7",
+        "category" : "MainStreet"
+    },
+    {
+        "name" : "Varjobaari",
+        "address" : "Insinöörinkatu 38",
+        "category" : "HerWood"
+    },
+    {
+        "name" : "Kasi Baari",
+        "address" : "Ylioppilaankatu 6",
+        "category" : "HerWood"
+    },
+    {
+        "name" : "Peyton Place",
+        "address" : "Teekkarinkatu 17",
+        "category" : "HerWood"
+    },
+    {
+        "name" : "Bar Amazonas",
+        "address" : "Insinöörinkatu 38",
+        "category" : "HerWood"
+    },
+    {
+        "name" : "Ale Pub Potti",
+        "address" : "Insinöörinkatu 30",
+        "category" : "HerWood"
+    },
+    {
+        "name" : "Pub Kultainen Apina",
+        "address" : "Insinöörinkatu 30",
+        "category" : "HerWood"
+    },
+    {
+        "name" : "Pub Wanha Seppä",
+        "address" : "Opiskelijankatu 1",
+        "category" : "HerWood"
+    },
+    {
+        "name" : "Bar Nurkka",
+        "address" : "Parkanonkatu 29",
+        "category" : "HerWood"
+    }
+
+    
+    
+
+]
