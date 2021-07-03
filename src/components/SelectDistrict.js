@@ -20,7 +20,8 @@ const SelectDistrict = () => {
             <div className="select-menu">
             <FormControl >
                 <InputLabel htmlFor="district-native-simple">Valitse alueesi</InputLabel>
-                <NativeSelect
+                <NativeSelect 
+                id ="select"
                 value={selectedDistrict}
                 onChange={handleChange}
                 inputProps={{
@@ -28,9 +29,9 @@ const SelectDistrict = () => {
                     id: 'district-native-simple',
                 }}
                 >
-                <option value={1}>Hämeenkatu</option>
-                <option value={2}>Tammela & Kaleva</option>
-                <option value={3}>Hervanta</option>
+                    <option value={1}>Hämeenkatu</option>
+                    <option value={2}>Tammela & Kaleva</option>
+                    <option value={3}>Hervanta</option>
                 </NativeSelect>
             </FormControl>
             </div>
