@@ -3,11 +3,11 @@ import FormControl from '@material-ui/core/FormControl';
 import NativeSelect from '@material-ui/core/NativeSelect';
 import InputLabel from '@material-ui/core/InputLabel';
 import ButtonPub from './ButtonPub'
-import ButtonTour from './ButtonTour';
 
 
 const SelectDistrict = () => {
     const [selectedDistrict, setDistrict] = useState(1)
+
 
     /** Handle the select menu change and set the value */
     const handleChange = (event) => {
@@ -35,9 +35,9 @@ const SelectDistrict = () => {
                 </NativeSelect>
             </FormControl>
             </div>
-            <div className="buttons">
-                <ButtonPub districtValue={selectedDistrict}></ButtonPub>
-                <ButtonTour districtValue={selectedDistrict}></ButtonTour>
+            <div >
+                <ButtonPub districtValue={selectedDistrict}/>
+
             </div>
         </div>
     )

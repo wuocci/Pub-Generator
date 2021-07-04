@@ -19,9 +19,11 @@ const Footer = () => {
             <img src={BackgroundImg} alt="Tampere city skyline black charasteristics."></img>
             
             <div className="footerTexts">
-                <p>Generaattorin alueet eivät ole asemakaavan mukaisesti katsottuja.</p>
-                <p>Hämeenkadun baareissa on otettu huomioon lähikorttelit keskustan alueella. </p>
+                <p>Otathan huomioon, että generaattorin alueet eivät ole asemakaavan mukaisesti katsottuja,
+                    eivätkä kapakat välttämättä vastaa realistisesti alueen rajoja.
+                </p>
                 <p><b>Arvonnassa mukana:</b></p>
+
                 <p>Hämeenkatu ({mainStreetPubs.length})</p>
                 
                 {mainStreetPubs.map((pub) => (
@@ -37,6 +39,7 @@ const Footer = () => {
                         <li>{pub.name}</li>
                     </ul> 
                 ))}
+
                 <p>Hervanta ({herwoodPubs.length})</p>
 
                 {herwoodPubs.map((pub) => (
