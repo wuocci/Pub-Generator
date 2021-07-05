@@ -6,7 +6,7 @@ import ButtonPub from './ButtonPub'
 
 
 const SelectDistrict = () => {
-    const [selectedDistrict, setDistrict] = useState(1)
+    const [selectedDistrict, setDistrict] = useState("1")
 
 
     /** Handle the select menu change and set the value */

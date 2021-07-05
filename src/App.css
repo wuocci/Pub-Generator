@@ -25,6 +25,7 @@ p{
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 auto;
   margin-top: 100px;
 }
 
@@ -65,6 +66,49 @@ p{
   font-size: 18px !important; 
   margin: 5px !important;
   border-radius: 10px !important;
+}
+
+
+
+
+
+/* LOADER STUFF */
+
+.progress-loader{
+  margin: 0 auto;
+  width: 60%;
+  margin-top: 50px;
+}
+
+.MuiLinearProgress-root{
+  height: 20px !important;
+  border-radius: 10px;
+}
+
+.MuiTypography-root{
+  margin-left: 20px !important;
+}
+
+
+
+
+
+/* MAP STUFF */
+
+.map-container {
+  height: 400px;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  width: 100% !important;
+}
+
+
+.pub-results{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
 }
 
 

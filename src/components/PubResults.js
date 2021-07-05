@@ -1,32 +1,10 @@
 import React, {useState} from 'react'
-import PubList from '../resources/barList.json'
+import Button from '@material-ui/core/Button';
+import Map from './Map'
 
+const PubResults = ({pubsToShow}) => {
+    const [mapVisible, setMapVisible] = useState(false)
 
-
-const PubResults = ({district, isTour}) => {
-    const [pubsToShow, setPubs] = useState([])
-    
-    const getPubs = () => {
-        const filteredPubs = PubList.filter(pub => pub.category === district)
-        if(isTour === true){
-            var pubArray = [];
-            while(pubArray.length < 5){
-              var pubToAdd = filteredPubs[Math.floor(Math.random() * filteredPubs.length)];
-              if(!pubArray.includes(pubToAdd)){
-                pubArray.push(pubToAdd);
-              }
-            }
-            setPubs(pubArray.concat(pubsToShow))
-        }
-        else{
-            setPubs(filteredPubs[Math.floor(Math.random() * filteredPubs.length)]);
-        }
-    }
-
-    if(pubsToShow.length === 0){
-       getPubs()    
-    }
-    
     return(
         <div className="pub-results">
             {pubsToShow.length > 1 ?
@@ -44,6 +22,14 @@ const PubResults = ({district, isTour}) => {
                 <p>{pubsToShow.address}</p>
             </div>
             }
+            {!mapVisible ?
+                <Button onClick={() => setMapVisible(!mapVisible)}>Näytä kartalla</Button>
+            : 
+            <div className="map-div">
+                <Map pubsToShow={pubsToShow}/>
+                <Button onClick={() => setMapVisible(!mapVisible)}>Piilota kartta</Button>
+            </div>
+        }
         </div>
     )
 }
