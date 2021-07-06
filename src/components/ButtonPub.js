@@ -16,8 +16,8 @@ const ButtonPub = ({districtValue}) => {
     var tour;
 
 
-    // Determine the district and name it. 
-    // Easier filtering on the helper function.
+    // determine the district and name it. 
+    // easier filtering on the helper function.
     useEffect(() => {
          if(districtValue === "1"){
              setDistrict("MainStreet")
@@ -31,7 +31,7 @@ const ButtonPub = ({districtValue}) => {
     }, [districtValue]);
 
 
-    // Progressbar movement implementation. 
+    // progressbar movement implementation. 
     useEffect(() => {
         const timer = setInterval(() => {
             setProgress((oldProgress) => {
@@ -49,7 +49,7 @@ const ButtonPub = ({districtValue}) => {
       }, []);
 
 
-    // Function to help the progressbar component.
+    // function to help the progressbar component.
     function LinearProgressWithLabel(props) {
         return (
             <div className="progress-loader">
@@ -63,11 +63,11 @@ const ButtonPub = ({districtValue}) => {
       }
 
 
-    //Function to handle button clicks
+    // function to handle button clicks
     const handleClick = (event) => {
         setShowResults(false);
 
-        // Determine if the button clicked was
+        // determine if the button clicked was
         // the tour one or just one pub.
         const buttonType = event.target.textContent;
         if(buttonType === "Arvo kapakka"){
@@ -77,11 +77,11 @@ const ButtonPub = ({districtValue}) => {
             tour = true;
         }
 
-        // Insert timer when button is clicked.
-        // Necessary for googles goecoding API to 
+        // insert timer when button is clicked.
+        // necessary for googles goecoding API to 
         // follow through on the requests.
         if(!loading){
-            // Get the pubs from the JSON array using helper function.
+            // get the pubs from the JSON array using helper function.
             const pubList = getPubs(district, tour);
             if(pubList.length === 1){
                 setPubs(pubList);
@@ -123,14 +123,16 @@ const ButtonPub = ({districtValue}) => {
 
     else{
         return(
-            <div className="buttons">
+            <div className="results">
                 <PubResults pubsToShow={pubsToShow}/>
-                <Button variant="outlined" color="secondary" onClick={handleClick}>
-                    Arvo kapakka
-                </Button>
-                <Button variant="outlined" color="secondary" onClick={handleClick}>
-                    Arvo kapakkakierros
-                </Button>
+                <div className="buttons">
+                    <Button variant="outlined" color="secondary" onClick={handleClick}>
+                        Arvo kapakka
+                    </Button>
+                    <Button variant="outlined" color="secondary" onClick={handleClick}>
+                        Arvo kapakkakierros
+                    </Button>
+                </div>
             </div>
         )
     }

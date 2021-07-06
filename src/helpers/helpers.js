@@ -1,5 +1,4 @@
 import PubList from '../resources/barList.json'
-import React, {useEffect, useState} from 'react'
 
 
 /**
@@ -34,14 +33,14 @@ export const getPubs = (district, isTour) => {
 export const encodeLocations = (pubsToShow) => {
     var locations = []
     if(pubsToShow.length > 1){
-        pubsToShow.map(pub => {
+        pubsToShow.map(pub => 
             locations.push(encodeURIComponent(pub.address))
-        })
+        )
     }
     else{
         locations.push(encodeURIComponent(pubsToShow.address))
     }
-    return locations 
+    return locations
 }
 
 
