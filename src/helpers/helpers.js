@@ -1,4 +1,5 @@
 import PubList from '../resources/barList.json'
+import React, {useEffect, useState} from 'react'
 
 
 /**
@@ -26,11 +27,11 @@ export const getPubs = (district, isTour) => {
 }
 
 /**
- * Helper function to get the geocodes.
+ * Helper function to url-8 encode locations.
  * @param {Array} pubsToShow 
- * @returns coordinates which have been geocoded
+ * @returns coordinates which have been encoded
  */
-export const getGeoCodes = async (pubsToShow) => {
+export const encodeLocations = (pubsToShow) => {
     var locations = []
     if(pubsToShow.length > 1){
         pubsToShow.map(pub => {
@@ -39,25 +40,8 @@ export const getGeoCodes = async (pubsToShow) => {
     }
     else{
         locations.push(encodeURIComponent(pubsToShow.address))
-    } 
-
-    //Fetch the geocodes from mapbox geocoding API
-    var coordinates = []
-    locations.forEach(async element => {
-        try{
-            // GET request using fetch inside useEffect React hoo
-            fetch('https://api.mapbox.com/geocoding/v5/mapbox.places/' + element + '.json?proximity=61.4, 23.7&access_token=pk.eyJ1Ijoid3VvY2NpIiwiYSI6ImNrZzd6cTRsODBja20yd3FvdG1lc2I5b2kifQ.w-yWhkZL-CVnRSIqkUhEag')
-            .then(async response => {
-                const data = await response.json();
-                const coordinate = data.features[0].center
-                coordinates.push(coordinate)
-            })
-        }
-        catch(error){
-            console.log(error)
-        }
-    })
-    return coordinates;
+    }
+    return locations 
 }
 
 

@@ -2,16 +2,21 @@ import React from 'react'
 import PubList from '../resources/barList.json'
 import BackgroundImg from '../other/skyline-tampere.png'
 
-/** This component includes the list of the pubs in the footer */
 
 const Footer = () => {
 
-    /** 
-     * Make an array out the pubs filtered by their category. Sort the lists aplhabetically.
-    */
-    const mainStreetPubs = PubList.filter(item => item.category === "MainStreet").sort((pub, pubToCompare) => pub.name.localeCompare(pubToCompare.name))
-    const tamKalPubs = PubList.filter(item => item.category === "TamKal").sort((pub, pubToCompare) => pub.name.localeCompare(pubToCompare.name))
-    const herwoodPubs = PubList.filter(item => item.category === "HerWood").sort((pub, pubToCompare) => pub.name.localeCompare(pubToCompare.name))
+
+    // make an array out the pubs filtered by their category.
+    // sort the lists aplhabetically.
+    const mainStreetPubs = PubList
+        .filter(pub => pub.category === "MainStreet")
+        .sort((pub, pubToCompare) => pub.name.localeCompare(pubToCompare.name))
+    const tamKalPubs = PubList
+        .filter(pub => pub.category === "TamKal")
+        .sort((pub, pubToCompare) => pub.name.localeCompare(pubToCompare.name))
+    const herwoodPubs = PubList
+        .filter(pub=> pub.category === "HerWood")
+        .sort((pub, pubToCompare) => pub.name.localeCompare(pubToCompare.name))
 
 
     return(
