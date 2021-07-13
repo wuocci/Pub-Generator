@@ -1,4 +1,4 @@
-import PubList from '../resources/barList.json'
+import PubList from '../resources/barList.json';
 
 
 /**
@@ -31,17 +31,16 @@ export const getPubs = (district, isTour) => {
  * @returns coordinates which have been encoded
  */
 export const encodeLocations = (pubsToShow) => {
+    console.log(pubsToShow)
     var locations = []
-    if(pubsToShow.length > 1){
-        pubsToShow.map(pub => 
+    if(pubsToShow[0].length > 1){
+        pubsToShow[0].map(pub => 
             locations.push(encodeURIComponent(pub.address))
         )
     }
     else{
-        locations.push(encodeURIComponent(pubsToShow.address))
+        locations.push(encodeURIComponent(pubsToShow[0].address))
     }
     return locations
 }
-
-
 

@@ -23,7 +23,7 @@ const SelectDistrict = () => {
                 <NativeSelect 
                 id ="select"
                 value={selectedDistrict}
-                onChange={handleChange}
+                onChange={(e) => handleChange(e)}
                 inputProps={{
                     name: 'district',
                     id: 'district-native-simple',

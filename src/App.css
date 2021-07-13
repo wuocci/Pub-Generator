@@ -7,15 +7,16 @@ body {
 }
 
 h1 {
+  margin-top: 75px;
+  letter-spacing: -2px;
   font-size: 35px;
-  font-weight: 200;
+  font-weight: 500;
 }
 
 p{
-  font-size: 20px;
+  margin-top: -5px;
+  font-size: 18px;
 }
-
-
 
 
 
@@ -30,7 +31,7 @@ p{
 }
 
 .header img {
-  width: 300px;
+  width: 250px;
 }
 
 
@@ -52,7 +53,7 @@ p{
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .MuiNativeSelect-root{
@@ -61,16 +62,15 @@ p{
 }
 
 .MuiButton-root {
+  font-family: 'Courier New', Courier, monospace !important;
+  font-weight: 500 !important;
+  text-transform: 'none' !important;
   width: 300px;
   height: 50px;
-  font-size: 18px !important; 
-  margin: 5px !important;
-  border-radius: 10px !important;
+  margin: 4px !important;
+  border-radius: 20px !important;
+  text-transform: none !important;
 }
-
-
-
-
 
 /* LOADER STUFF */
 
@@ -100,17 +100,14 @@ p{
   position: relative;
   top: 0;
   bottom: 0;
+  width: 75%;
+  margin: 0 auto;
 }
 
 .pub-results{
   text-align: center;
 }
 
-.results-buttons{
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
 
 
 /* FOOTER STUFF */ 
@@ -120,13 +117,21 @@ p{
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-color: black;
+  background-color: #080808;
   margin-top: -10px;
-  
+}
+
+.footer p{
+  width: 700px;
+  margin: 0 auto;
 }
 
 .footer img{
   height: 100%;
   width: 100%;
   margin-top: -50px;
+}
+
+.footer li {
+  font-size: 16px !important;
 }

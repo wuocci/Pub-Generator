@@ -4,17 +4,16 @@ import PubResults from './PubResults'
 import LinearProgress from '@material-ui/core/LinearProgress';
 import Typography from '@material-ui/core/Typography';
 import { getPubs } from '../helpers/helpers'
-
+  
 
 const ButtonPub = ({districtValue}) => {
     const [district, setDistrict] = useState("");
     const [showResults, setShowResults] = useState(false);
-    const [pubsToShow, setPubs] = useState([])
     const [progress, setProgress] = useState(0);
     const [loading, setLoading] = useState(false);
+    const pubsToShow = useRef([]);
     const timer = useRef();
-    var tour;
-
+    const tour = useRef();
 
     // determine the district and name it. 
     // easier filtering on the helper function.
@@ -41,12 +40,14 @@ const ButtonPub = ({districtValue}) => {
               const diff = Math.random() * 10;
               return Math.min(oldProgress + diff, 100);
             });
-          }, 460);
+          }, 200);
 
         return () => {
           clearTimeout(timer.current);
         };
       }, []);
+
+
 
 
     // function to help the progressbar component.
@@ -62,19 +63,21 @@ const ButtonPub = ({districtValue}) => {
         );
       }
 
-
     // function to handle button clicks
     const handleClick = (event) => {
+        if(pubsToShow.current.length > 0){
+            pubsToShow.current = []
+        }
         setShowResults(false);
 
         // determine if the button clicked was
         // the tour one or just one pub.
         const buttonType = event.target.textContent;
         if(buttonType === "Arvo kapakka"){
-            tour = false;
+            tour.current = false;
         }
         else{
-            tour = true;
+            tour.current = true;
         }
 
         // insert timer when button is clicked.
@@ -82,31 +85,28 @@ const ButtonPub = ({districtValue}) => {
         // follow through on the requests.
         if(!loading){
             // get the pubs from the JSON array using helper function.
-            const pubList = getPubs(district, tour);
-            if(pubList.length === 1){
-                setPubs(pubList);
-            }
-            else{
-                setPubs(...pubsToShow, pubList);
-            }
+            const pubList = getPubs(district, tour.current);
+            pubsToShow.current.push(pubList);
             setLoading(true);
             setProgress(10);
             timer.current = window.setTimeout(() => {
                 setShowResults(true);
                 setLoading(false);
-            }, 1000);
+            }, 2000);
         }
     }
+
+
 
 
     /*  RENDERS */ 
     if(!showResults && !loading){
         return (
             <div className="buttons">
-                <Button variant="outlined" color="secondary" onClick={handleClick}>
+                <Button style={{fontSize: "20px"}} variant="contained" color="secondary" onClick={handleClick}>
                     Arvo kapakka
                 </Button>
-                <Button variant="outlined" color="secondary" onClick={handleClick}>
+                <Button style={{fontSize: "20px"}} variant="contained" color="secondary" onClick={handleClick}>
                     Arvo kapakkakierros
                 </Button>
             </div>
@@ -126,10 +126,10 @@ const ButtonPub = ({districtValue}) => {
             <div className="results">
                 <PubResults pubsToShow={pubsToShow}/>
                 <div className="buttons">
-                    <Button variant="outlined" color="secondary" onClick={handleClick}>
+                <Button style={{fontSize: "20px"}}variant="contained" color="secondary" onClick={handleClick}>
                         Arvo kapakka
                     </Button>
-                    <Button variant="outlined" color="secondary" onClick={handleClick}>
+                    <Button style={{fontSize: "20px"}} variant="contained" color="secondary" onClick={handleClick}>
                         Arvo kapakkakierros
                     </Button>
                 </div>
