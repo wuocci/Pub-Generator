@@ -40,7 +40,7 @@ const ButtonPub = ({districtValue}) => {
               const diff = Math.random() * 10;
               return Math.min(oldProgress + diff, 100);
             });
-          }, 200);
+          }, 250);
 
         return () => {
           clearTimeout(timer.current);
@@ -54,7 +54,7 @@ const ButtonPub = ({districtValue}) => {
     function LinearProgressWithLabel(props) {
         return (
             <div className="progress-loader">
-            <LinearProgress variant="determinate" {...props} color="secondary" />
+            <LinearProgress variant="determinate" {...props}/>
               <Typography variant="subtitle1" color="textSecondary">{`${Math.round(
                 props.value,
               )}% lasketaan todennäköisyyksiä...`}
@@ -65,6 +65,7 @@ const ButtonPub = ({districtValue}) => {
 
     // function to handle button clicks
     const handleClick = (event) => {
+        window.scrollTo(0, 200);
         if(pubsToShow.current.length > 0){
             pubsToShow.current = []
         }
@@ -92,7 +93,7 @@ const ButtonPub = ({districtValue}) => {
             timer.current = window.setTimeout(() => {
                 setShowResults(true);
                 setLoading(false);
-            }, 2000);
+            }, 3000);
         }
     }
 
@@ -103,10 +104,10 @@ const ButtonPub = ({districtValue}) => {
     if(!showResults && !loading){
         return (
             <div className="buttons">
-                <Button style={{fontSize: "20px"}} variant="contained" color="secondary" onClick={handleClick}>
+                <Button style={{fontSize: "20px"}} variant="contained" className="random-pub-tour-button" onClick={handleClick}>
                     Arvo kapakka
                 </Button>
-                <Button style={{fontSize: "20px"}} variant="contained" color="secondary" onClick={handleClick}>
+                <Button style={{fontSize: "20px"}} variant="contained" className="random-pub-tour-button" onClick={handleClick}>
                     Arvo kapakkakierros
                 </Button>
             </div>
@@ -126,10 +127,10 @@ const ButtonPub = ({districtValue}) => {
             <div className="results">
                 <PubResults pubsToShow={pubsToShow}/>
                 <div className="buttons">
-                <Button style={{fontSize: "20px"}}variant="contained" color="secondary" onClick={handleClick}>
+                <Button style={{fontSize: "20px"}}variant="contained" className="random-pub-tour-button"onClick={handleClick}>
                         Arvo kapakka
                     </Button>
-                    <Button style={{fontSize: "20px"}} variant="contained" color="secondary" onClick={handleClick}>
+                    <Button style={{fontSize: "20px"}} variant="contained" className="random-pub-tour-button"  onClick={handleClick}>
                         Arvo kapakkakierros
                     </Button>
                 </div>

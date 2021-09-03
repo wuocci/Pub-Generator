@@ -13,11 +13,23 @@ h1 {
   font-weight: 500;
 }
 
-p{
-  margin-top: -5px;
-  font-size: 18px;
+.MuiTypography-root{
+  margin: 0 auto !important;
+  text-align: center !important;
+  margin-top: 30px !important;
+  margin-bottom: 20px !important;
+
 }
 
+.MuiTypography-body2{
+  font-family: 'Courier New', Courier, monospace !important;
+  text-align: center;
+  font-size: 18px !important;
+}
+
+.MuiTypography-colorPrimary{
+  color: #DC2800 !important;
+}
 
 
 /* HEADER STUFF */
@@ -32,6 +44,10 @@ p{
 
 .header img {
   width: 250px;
+}
+
+.header img:hover{
+  cursor: pointer;
 }
 
 
@@ -64,30 +80,48 @@ p{
 .MuiButton-root {
   font-family: 'Courier New', Courier, monospace !important;
   font-weight: 500 !important;
-  text-transform: 'none' !important;
   width: 300px;
   height: 50px;
   margin: 4px !important;
   border-radius: 20px !important;
-  text-transform: none !important;
 }
+
+
+.random-pub-button, .random-pub-tour-button{
+  background-color: #DC2800 !important;
+  color: #ffffff !important;
+}
+
+.random-pub-button, .random-pub-tour-button:hover{
+  background-color: #881900 !important;
+  transform: scale(1.02);
+}
+
+
+
+
+
 
 /* LOADER STUFF */
 
 .progress-loader{
   margin: 0 auto;
-  width: 60%;
+  width: 400px;
   margin-top: 50px;
 }
 
 .MuiLinearProgress-root{
-  height: 20px !important;
-  border-radius: 10px;
+  height: 25px !important;
+  border-radius: 5px;
 }
 
-.MuiTypography-root{
-  margin-left: 20px !important;
+.MuiLinearProgress-barColorPrimary{
+  background-color: #DC2800 !important;
+  width: 100%;
 }
+
+
+
 
 
 
@@ -105,8 +139,16 @@ p{
 }
 
 .pub-results{
+  margin-top: 30px;
   text-align: center;
 }
+
+.pub-onlyone-name:hover, .pub-list-name:hover{
+    cursor: pointer;
+    color: rgb(114, 2, 2) !important;
+}
+
+
 
 
 
@@ -121,9 +163,8 @@ p{
   margin-top: -10px;
 }
 
-.footer p{
-  width: 700px;
-  margin: 0 auto;
+.footer-instructions {
+  width: 50%;
 }
 
 .footer img{
@@ -132,6 +173,25 @@ p{
   margin-top: -50px;
 }
 
-.footer li {
+.MuiListSubheader-root{
   font-size: 16px !important;
 }
+
+.MuiListSubheader-colorPrimary{
+  color: #ffffff !important;
+  text-decoration: underline !important;
+}
+
+.MuiListItem-root{
+  font-size: 10px !important;
+  margin-top: -25px !important;
+  padding: 0px !important;
+}
+
+.MuiListItemText-root{
+  font-size: 14px !important;
+  padding: 10px;
+  margin: 0 auto;
+  text-align: center;
+}
+

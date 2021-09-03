@@ -2,10 +2,7 @@ import React, {useRef, useEffect, useState} from 'react'
 import DialogTitle from '@material-ui/core/DialogTitle';
 import Dialog from '@material-ui/core/Dialog';
 import DialogActions from '@material-ui/core/DialogActions';
-import DialogContent from '@material-ui/core/DialogContent';
-import DialogContentText from '@material-ui/core/DialogContentText';
 import Button from '@material-ui/core/Button';
-import { encodeLocations } from '../helpers/helpers';
 
 
 const PubDialog = ({showDialog, pubName}) => {  
@@ -16,6 +13,8 @@ const PubDialog = ({showDialog, pubName}) => {
     const showSearchResults = () => {
         showDialog.current = false
         var encodePubName = pubName.current
+
+        //remove number from the google search
         var listOfNumbers = ["1", "2", "3", "4", "5"]
         if(listOfNumbers.includes(encodePubName[0])) {
             encodePubName = encodePubName.substring(3)

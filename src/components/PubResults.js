@@ -2,6 +2,7 @@ import React, {useState, useRef} from 'react'
 import Button from '@material-ui/core/Button';
 import PubDialog from './PubDialog';
 import Map from './Map.js'
+import { Typography } from '@material-ui/core';
 
 const PubResults = ({pubsToShow}) => {
     const [mapVisible, setMapVisible] = useState(false)
@@ -22,10 +23,12 @@ const PubResults = ({pubsToShow}) => {
                                         pubName={pubName}/>} 
                 {pubsToShow.current[0].map((pub, ind) => (
                         <div key={pub.name}>
-                            <Button onClick={handleDialogChange} color="secondary"
-                                    style={{fontSize: "16px"}}>
+                            <Typography color="primary" variant="h6" onClick={handleDialogChange} className="pub-list-name"
+                                style={{textDecoration: "underline",
+                                width: "400px",
+                                marginTop: "-20px"}}>
                                     {ind +1 }. {pub.name}
-                            </Button>
+                            </Typography>
                             <p>{pub.address}</p>
                         </div>
                     ))}
@@ -35,14 +38,12 @@ const PubResults = ({pubsToShow}) => {
             <div className="pub-onlyone">
                  {showDialog && <PubDialog showDialog={showDialog}
                                             pubName={pubName}/>} 
-               <Button onClick={handleDialogChange} color="secondary"
+               <Typography color="primary" variant="h5" onClick={handleDialogChange} className="pub-onlyone-name"
                     style={{textDecoration: "underline",
-                            width: "400px",
-                            fontSize: "22px",
-                            marginTop: "-20px"}}>
+                            width: "400px"}}>
                     {pubsToShow.current[0].name}
-                </Button>
-                <p>{pubsToShow.current[0].address}</p>
+                </Typography>
+                <Typography variant="body2">{pubsToShow.current[0].address}</Typography>
             </div>
             }
 
