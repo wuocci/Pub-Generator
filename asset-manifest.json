@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Pub-Generator2/static/css/main.e3698fd4.chunk.css",
+    "main.js": "/Pub-Generator2/static/js/main.71a57f98.chunk.js",
+    "main.js.map": "/Pub-Generator2/static/js/main.71a57f98.chunk.js.map",
+    "runtime-main.js": "/Pub-Generator2/static/js/runtime-main.1831cf8a.js",
+    "runtime-main.js.map": "/Pub-Generator2/static/js/runtime-main.1831cf8a.js.map",
+    "static/css/2.3a5d91c4.chunk.css": "/Pub-Generator2/static/css/2.3a5d91c4.chunk.css",
+    "static/js/2.632a1b39.chunk.js": "/Pub-Generator2/static/js/2.632a1b39.chunk.js",
+    "static/js/2.632a1b39.chunk.js.map": "/Pub-Generator2/static/js/2.632a1b39.chunk.js.map",
+    "index.html": "/Pub-Generator2/index.html",
+    "static/css/2.3a5d91c4.chunk.css.map": "/Pub-Generator2/static/css/2.3a5d91c4.chunk.css.map",
+    "static/css/main.e3698fd4.chunk.css.map": "/Pub-Generator2/static/css/main.e3698fd4.chunk.css.map",
+    "static/js/2.632a1b39.chunk.js.LICENSE.txt": "/Pub-Generator2/static/js/2.632a1b39.chunk.js.LICENSE.txt",
+    "static/media/beers3.48da99b6.png": "/Pub-Generator2/static/media/beers3.48da99b6.png",
+    "static/media/skyline-tampere.72233d18.png": "/Pub-Generator2/static/media/skyline-tampere.72233d18.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1831cf8a.js",
+    "static/css/2.3a5d91c4.chunk.css",
+    "static/js/2.632a1b39.chunk.js",
+    "static/css/main.e3698fd4.chunk.css",
+    "static/js/main.71a57f98.chunk.js"
+  ]
+}
