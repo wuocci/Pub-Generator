@@ -31,8 +31,11 @@ const Footer = () => {
             <img src={BackgroundImg} alt="Tampere city skyline black charasteristics."></img>
             
             <div className="footerTexts">
-                <Typography className="footer-instructions"variant="body2">Otathan huomioon, että generaattorin alueet eivät ole asemakaavan mukaisesti katsottuja,
-                    eivätkä kapakat välttämättä vastaa realistisesti alueen rajoja.
+                <Typography className="footer-instructions"variant="body2">
+                    Otathan huomioon, että osa Hämeenkadun kapakoista on myös lähikorttelin alueella olevia kapakoita.
+                </Typography>
+                <Typography variant="body2">
+                    Osa kapakoista saattaa olla osittain myös yökerhoja. Generaattori ei tuota pelkkiä yökerhoja tuloksena.
                 </Typography>
 
                 <Typography variant="h6"><b>Arvonnassa mukana:</b></Typography>

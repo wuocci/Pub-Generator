@@ -40,7 +40,7 @@ const ButtonPub = ({districtValue}) => {
               const diff = Math.random() * 10;
               return Math.min(oldProgress + diff, 100);
             });
-          }, 250);
+          }, 180);
 
         return () => {
           clearTimeout(timer.current);
@@ -65,7 +65,7 @@ const ButtonPub = ({districtValue}) => {
 
     // function to handle button clicks
     const handleClick = (event) => {
-        window.scrollTo(0, 200);
+        window.scrollTo(0, 100);
         if(pubsToShow.current.length > 0){
             pubsToShow.current = []
         }
@@ -104,10 +104,10 @@ const ButtonPub = ({districtValue}) => {
     if(!showResults && !loading){
         return (
             <div className="buttons">
-                <Button style={{fontSize: "20px"}} variant="contained" className="random-pub-tour-button" onClick={handleClick}>
+                <Button variant="contained" className="random-pub-tour-button" onClick={handleClick}>
                     Arvo kapakka
                 </Button>
-                <Button style={{fontSize: "20px"}} variant="contained" className="random-pub-tour-button" onClick={handleClick}>
+                <Button variant="contained" className="random-pub-tour-button" onClick={handleClick}>
                     Arvo kapakkakierros
                 </Button>
             </div>
@@ -127,10 +127,10 @@ const ButtonPub = ({districtValue}) => {
             <div className="results">
                 <PubResults pubsToShow={pubsToShow}/>
                 <div className="buttons">
-                <Button style={{fontSize: "20px"}}variant="contained" className="random-pub-tour-button"onClick={handleClick}>
+                <Button variant="contained" className="random-pub-tour-button"onClick={handleClick}>
                         Arvo kapakka
                     </Button>
-                    <Button style={{fontSize: "20px"}} variant="contained" className="random-pub-tour-button"  onClick={handleClick}>
+                    <Button variant="contained" className="random-pub-tour-button"  onClick={handleClick}>
                         Arvo kapakkakierros
                     </Button>
                 </div>

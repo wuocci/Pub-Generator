@@ -23,10 +23,13 @@ const PubResults = ({pubsToShow}) => {
                                         pubName={pubName}/>} 
                 {pubsToShow.current[0].map((pub, ind) => (
                         <div key={pub.name}>
-                            <Typography color="primary" variant="h6" onClick={handleDialogChange} className="pub-list-name"
-                                style={{textDecoration: "underline",
-                                width: "400px",
-                                marginTop: "-20px"}}>
+                            <Typography color="primary" 
+                                        variant="h6" 
+                                        onClick={handleDialogChange} 
+                                        className="pub-list-name"
+                                        style={{textDecoration: "underline",
+                                                width: "400px",
+                                                marginTop: "-20px"}}>
                                     {ind +1 }. {pub.name}
                             </Typography>
                             <p>{pub.address}</p>
@@ -38,9 +41,12 @@ const PubResults = ({pubsToShow}) => {
             <div className="pub-onlyone">
                  {showDialog && <PubDialog showDialog={showDialog}
                                             pubName={pubName}/>} 
-               <Typography color="primary" variant="h5" onClick={handleDialogChange} className="pub-onlyone-name"
-                    style={{textDecoration: "underline",
-                            width: "400px"}}>
+               <Typography color="primary" 
+                            variant="h5" 
+                            onClick={handleDialogChange} 
+                            className="pub-onlyone-name"
+                            style={{textDecoration: "underline",
+                                    width: "400px"}}>
                     {pubsToShow.current[0].name}
                 </Typography>
                 <Typography variant="body2">{pubsToShow.current[0].address}</Typography>

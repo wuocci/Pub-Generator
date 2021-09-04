@@ -68,14 +68,14 @@ const Map = ({pubsToShow}) => {
                     
                     var popup = new mapboxgl.Popup({ offset: 25 })
                         .setMaxWidth("300px")
-                        .setText(
-                        pubsToShow.current[index].name
-                    );
+                        .setText(pubsToShow.current[0].length > 1 ?
+                        (index +1) + ". " + pubsToShow.current[0][index].name : pubsToShow.current[index].name
+                        );
             
                     // add the markers
                     new mapboxgl.Marker({
-                    color: "#FFFFFF",
-                    scale: 1.5,
+                    color: "#dc2800",
+                    scale: 1.2,
                     })
                         .setLngLat([coordinates[0], coordinates[1]])
                         .setPopup(popup)
