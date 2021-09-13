@@ -1,4 +1,4 @@
-# Tampere's very own pub generator
+# Tampere's very own Pub Generator
 
 
 Random pub and pubtour generator for Tampere. The idea is based on kallioon.fi which has all the pubs from Kallio, Helsinki.
