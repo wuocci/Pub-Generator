@@ -22,7 +22,6 @@ const PubDialog = ({showDialog, pubName}) => {
             encodePubName = encodePubName.substring(3)
         }
         var encodedPub = encodeURIComponent(encodePubName)
-        console.log(encodedPub)
         window.open("https://www.google.com/search?q=" + encodedPub + " Tampere")
     }
   

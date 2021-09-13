@@ -8,11 +8,11 @@ mapboxgl.accessToken = "pk.eyJ1Ijoid3VvY2NpIiwiYSI6ImNrZzd6cTRsODBja20yd3FvdG1lc
 
 
 const Map = ({pubsToShow}) => {
+    const [error, setError] = useState(null);
     const mapContainer = useRef(null);
     const map = useRef(null);
     const centerToHervanta = useRef(false) // boolean for centering the map to hervanta
     const encodedLocations = useRef([]);
-    const [error, setError] = useState(null);
     const hervantaCenter = [23.8513, 61.4497]
 
 
@@ -24,7 +24,7 @@ const Map = ({pubsToShow}) => {
     if(pubsToShow.current[0].category === "HerWood"){
         centerToHervanta.current = true;
     }
-    else if(pubsToShow.current[0].length > 0 && pubsToShow.current[0].category === "HerWood"){
+    else if(pubsToShow.current[0].length > 1 && pubsToShow.current[0][0].category === "HerWood"){
         centerToHervanta.current = true;
     }
 
@@ -49,21 +49,17 @@ const Map = ({pubsToShow}) => {
         // based on the encoded addresses.
         // 3. add a marker in the spot. 
         */ 
-       console.log(pubsToShow)
         encodedLocations.current = encodeLocations(pubsToShow.current);
-        console.log(encodedLocations)
         // fetch the data from the API
         encodedLocations.current.forEach((element, index) =>  {
 
-        // declare the full URL to fetch (easier for me to comprehend)
+        // declare the full URL to fetch (easier to comprehend)
             var fetchURL = URL + element + settings + mapboxgl.accessToken;
             const fetchData = async () => {
                 try {
                     const resp = await fetch(fetchURL);
                     const data = await resp.json();
-                    console.log(data.features)
                     const coordinates = data.features[0].center
-                    console.log(coordinates)
                                     
                     
                     var popup = new mapboxgl.Popup({ offset: 25 })
@@ -84,7 +80,6 @@ const Map = ({pubsToShow}) => {
                 } 
                 // prepare for errors and make room for notification.
                 catch (e) {
-                    console.log(e)
                     setError(e);
                 }
             }

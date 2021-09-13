@@ -140,7 +140,7 @@
         "category" : "MainStreet"
     },
     {
-        "name" : "H5", 
+        "name" : "H5 Bar & Cellar", 
         "address" : "Hämeenkatu 6",
         "category" : "MainStreet"
     },
@@ -385,7 +385,7 @@
         "category" : "HerWood"
     },
     {
-        "name" : "Varjobaari (Hervanta)",
+        "name" : "Varjobaari",
         "address" : "Insinöörinkatu 38",
         "category" : "HerWood"
     },

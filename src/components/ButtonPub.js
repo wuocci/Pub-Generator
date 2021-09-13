@@ -40,7 +40,7 @@ const ButtonPub = ({districtValue}) => {
               const diff = Math.random() * 10;
               return Math.min(oldProgress + diff, 100);
             });
-          }, 180);
+          }, 200);
 
         return () => {
           clearTimeout(timer.current);
@@ -82,7 +82,7 @@ const ButtonPub = ({districtValue}) => {
         }
 
         // insert timer when button is clicked.
-        // necessary for googles goecoding API to 
+        // necessary for goecoding API to 
         // follow through on the requests.
         if(!loading){
             // get the pubs from the JSON array using helper function.

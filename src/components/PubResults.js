@@ -12,7 +12,6 @@ const PubResults = ({pubsToShow}) => {
     const handleDialogChange = (event) => {
         showDialog.current = true
         pubName.current = event.target.textContent;
-        console.log(pubName)
     }
 
     return(
