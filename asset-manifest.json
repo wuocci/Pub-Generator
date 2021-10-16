@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/pub-generator/static/css/main.e3698fd4.chunk.css",
-    "main.js": "/pub-generator/static/js/main.71a57f98.chunk.js",
-    "main.js.map": "/pub-generator/static/js/main.71a57f98.chunk.js.map",
+    "main.css": "/pub-generator/static/css/main.12fffec0.chunk.css",
+    "main.js": "/pub-generator/static/js/main.66d84c56.chunk.js",
+    "main.js.map": "/pub-generator/static/js/main.66d84c56.chunk.js.map",
     "runtime-main.js": "/pub-generator/static/js/runtime-main.2146373a.js",
     "runtime-main.js.map": "/pub-generator/static/js/runtime-main.2146373a.js.map",
     "static/css/2.3a5d91c4.chunk.css": "/pub-generator/static/css/2.3a5d91c4.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.4492be00.chunk.js.map": "/pub-generator/static/js/2.4492be00.chunk.js.map",
     "index.html": "/pub-generator/index.html",
     "static/css/2.3a5d91c4.chunk.css.map": "/pub-generator/static/css/2.3a5d91c4.chunk.css.map",
-    "static/css/main.e3698fd4.chunk.css.map": "/pub-generator/static/css/main.e3698fd4.chunk.css.map",
+    "static/css/main.12fffec0.chunk.css.map": "/pub-generator/static/css/main.12fffec0.chunk.css.map",
     "static/js/2.4492be00.chunk.js.LICENSE.txt": "/pub-generator/static/js/2.4492be00.chunk.js.LICENSE.txt",
     "static/media/beers3.48da99b6.png": "/pub-generator/static/media/beers3.48da99b6.png",
     "static/media/skyline-tampere.72233d18.png": "/pub-generator/static/media/skyline-tampere.72233d18.png"
@@ -19,7 +19,7 @@
     "static/js/runtime-main.2146373a.js",
     "static/css/2.3a5d91c4.chunk.css",
     "static/js/2.4492be00.chunk.js",
-    "static/css/main.e3698fd4.chunk.css",
-    "static/js/main.71a57f98.chunk.js"
+    "static/css/main.12fffec0.chunk.css",
+    "static/js/main.66d84c56.chunk.js"
   ]
 }
